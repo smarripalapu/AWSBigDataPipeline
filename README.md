@@ -3,7 +3,7 @@
 Create big data processing pipeline. Explore use of tools such as Kafka or AWS Kinesis and AWS DynamoDB or EMR to accepts and process data in real-time or “simulated” real time.
 
 ## Docker image build steps for mac m1:
-ECR (Elastic Container Registry) REPOSITORY: s3dynamo 
+ECR (Elastic Container Registry) REPOSITORY: s3dynamo \n
 Open the repository to view push commands as below.
 
 1) docker build -t s3dynamo . --platform=linux/amd64
