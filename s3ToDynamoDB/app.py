@@ -6,14 +6,10 @@ import os
 def handler(event, context):
     # TODO implement
     servicereq_df = s3_access.get_data_frame()
-    #for i, row in df.iterrows():
-    #    item = row.to_dict()
 
     #create table if it doesn't exist
     servicereq_table = dynamoDB_accessor.get_table()
     #wait for it to get created and print the number of rows in it, expected to be 0.
-    #print("No of rows in gtrends table: ")
-    #print(dynamoDb_accessor.get_table_status("GTrends"))
 
     #Insert dataframe rows into table
     dynamoDB_accessor.put_items(servicereq_table, servicereq_df)
